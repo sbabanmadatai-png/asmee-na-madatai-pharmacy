@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison & Receipt - Asmee Na Madatai Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Asmee Na Madatai Pharmacy</h1>
+        <nav>
+            <a href="index.html">Products</a>
+            <a href="payment.html">Payment</a>
+            <a href="comparison.html">Comparison</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Product Comparison</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aspirin</td>
+                    <td>$5.99</td>
+                    <td>Pain reliever</td>
+                </tr>
+                <tr>
+                    <td>Vitamin C</td>
+                    <td>$8.49</td>
+                    <td>Immune booster</td>
+                </tr>
+                <tr>
+                    <td>Bandages</td>
+                    <td>$3.29</td>
+                    <td>First aid</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Receipt</h2>
+        <div id="receipt">
+            <p>Thank you for your purchase!</p>
+            <p>Total: $17.77</p>
+            <p>Payment Method: Credit Card</p>
+        </div>
+        <button onclick="generateReceipt()">Generate Receipt</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmee Na Madatai Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Asmee Na Madatai Pharmacy</h1>
+    </header>
+    <main>
+        <div class="carousel">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel-container">
+                <div class="slide">
+                    <div class="product">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2024/9/453699709/CH/EL/TV/2474176/aspirin-tablets.jpeg" alt="Aspirin">
+                        <p>Price: ₦2000</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="product">
+                        <img src="https://naturesfieldng.com/wp-content/uploads/2024/03/Vitamin-C-1000mg-Mega-C-2.webp" alt="Vitamin C">
+                        <p>Price: ₦8,490</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="product">
+                        <img src="https://cdn.shopify.com/s/files/1/0269/7497/8132/t/12/assets/bt400601min-1669015314687.png?v=1669015316" alt="Bandages">
+                        <p>Price: ₦3,290</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="product">
+                        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrdDziXG1itpdTqo-5QGiyz2qWKdKKL9ZlIQ&s" alt="Antibiotic">
+                        <p>Price: ₦12,990</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBpa3NYzkt6wwEpQRiQVKZi_MYpH7N8aivw&s" alt="Cough Syrup">
+                        <p>Price: ₦7,890</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="product">
+                        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIPasoWgRrosmSbiakkRTbsaor3ZJGH406nQ&s" alt="Thermometer">
+                        <p>Price: ₦15,490</p>
+                    </div>
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="description">
+            <h2>About Asmee Na Madatai Pharmacy</h2>
+            <p>Asmee Na Madatai Pharmacy is your trusted source for quality medications and health products. We offer a wide range of pharmaceuticals, vitamins, and first-aid supplies at affordable prices. Our knowledgeable staff is here to help you find the right products for your health needs.</p>
+        </div>
+        <div class="product-list">
+            <h2>Available Products</h2>
+            <div id="products">
+                <div class="product-item">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2024/9/453699709/CH/EL/TV/2474176/aspirin-tablets.jpeg" alt="Aspirin">
+                    <span>Aspirin - ₦2000</span>
+                    <button onclick="addToCart('Aspirin', 5990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://naturesfieldng.com/wp-content/uploads/2024/03/Vitamin-C-1000mg-Mega-C-2.webp" alt="Vitamin C">
+                    <span>Vitamin C - ₦8,490</span>
+                    <button onclick="addToCart('Vitamin C', 8490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src=https://cdn.shopify.com/s/files/1/0269/7497/8132/t/12/assets/bt400601min-1669015314687.png?v=1669015316 alt="Bandages">
+                    <span>Bandages - ₦3,290</span>
+                    <button onclick="addToCart('Bandages', 3290)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrdDziXG1itpdTqo-5QGiyz2qWKdKKL9ZlIQ&s" alt="Antibiotic">
+                    <span>Antibiotic Cream - ₦12,990</span>
+                    <button onclick="addToCart('Antibiotic Cream', 12990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBpa3NYzkt6wwEpQRiQVKZi_MYpH7N8aivw&s" alt="Cough Syrup">
+                    <span>Cough Syrup - ₦7,890</span>
+                    <button onclick="addToCart('Cough Syrup', 7890)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIPasoWgRrosmSbiakkRTbsaor3ZJGH406nQ&s" alt="Thermometer">
+                    <span>Thermometer - ₦15,490</span>
+                    <button onclick="addToCart('Thermometer', 15490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf4NE35ykB2v8qRFjxSMpfqGpBEk0Fk1NKCg&s" alt="Pain Reliever">
+                    <span>Pain Reliever - ₦6,990</span>
+                    <button onclick="addToCart('Pain Reliever', 6990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaS9qfVPQovZgcA6IQU2YR4bgwu_XG9Ve3_w&s" alt="Antihistamine">
+                    <span>Antihistamine - ₦9,490</span>
+                    <button onclick="addToCart('Antihistamine', 9490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://shop.biotechusa.com/cdn/shop/files/Multivitamin_ForMen_60tabs_250ml_600x600_f5c1501e-d7b1-4f5a-a8bf-68854eca7b10.png?v=1718796303" alt="Vitamin D">
+                    <span>Vitamin D - ₦10,990</span>
+                    <button onclick="addToCart('Vitamin D', 10990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://assetpharmacy.com/wp-content/uploads/2019/04/Ibuprofen-400mg-Extra-Strenght-Tablets-10-Tablets.jpg alt="Multivitamin">
+                    <span>Multivitamin - ₦14,990</span>
+                    <button onclick="addToCart('Multivitamin', 14990)">Add to Cart</button>
+                </div>
+                <!-- Add more products to reach over 50, but for brevity, adding 20 -->
+                <div class="product-item">
+                    <img src="https://www.supermart.ng/cdn/shop/files/medp1604_benylin_cold___flu_max_strength_16_capsules_300x300_d2c43bec-da3e-4084-8b61-0f9380eec2e6.jpg?v=1688757556" alt="Ibuprofen">
+                    <span>Ibuprofen - ₦4,990</span>
+                    <button onclick="addToCart('Ibuprofen', 4990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FF57/FFFFFF?text=Cold+Medicine" alt="Cold Medicine">
+                    <span>Cold Medicine - ₦11,490</span>
+                    <button onclick="addToCart('Cold Medicine', 11490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/3357FF/FFFFFF?text=Allergy+Pills" alt="Allergy Pills">
+                    <span>Allergy Pills - ₦8,990</span>
+                    <button onclick="addToCart('Allergy Pills', 8990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF33A1/FFFFFF?text=Eye+Drops" alt="Eye Drops">
+                    <span>Eye Drops - ₦7,490</span>
+                    <button onclick="addToCart('Eye Drops', 7490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/A133FF/FFFFFF?text=Hand+Sanitizer" alt="Hand Sanitizer">
+                    <span>Hand Sanitizer - ₦2,990</span>
+                    <button onclick="addToCart('Hand Sanitizer', 2990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FFA1/FFFFFF?text=Face+Mask" alt="Face Mask">
+                    <span>Face Mask - ₦1,490</span>
+                    <button onclick="addToCart('Face Mask', 1490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FFFF33/FFFFFF?text=Band-Aid" alt="Band-Aid">
+                    <span>Band-Aid - ₦3,990</span>
+                    <button onclick="addToCart('Band-Aid', 3990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FFFF/FFFFFF?text=Antiseptic" alt="Antiseptic">
+                    <span>Antiseptic - ₦5,490</span>
+                    <button onclick="addToCart('Antiseptic', 5490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF33FF/FFFFFF?text=Protein+Powder" alt="Protein Powder">
+                    <span>Protein Powder - ₦19,990</span>
+                    <button onclick="addToCart('Protein Powder', 19990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FF33/FFFFFF?text=Omega+3" alt="Omega 3">
+                    <span>Omega 3 - ₦12,490</span>
+                    <button onclick="addToCart('Omega 3', 12490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF5733/FFFFFF?text=Calcium+Supplement" alt="Calcium Supplement">
+                    <span>Calcium Supplement - ₦9,990</span>
+                    <button onclick="addToCart('Calcium Supplement', 9990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FF57/FFFFFF?text=Magnesium" alt="Magnesium">
+                    <span>Magnesium - ₦8,490</span>
+                    <button onclick="addToCart('Magnesium', 8490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/3357FF/FFFFFF?text=Probiotic" alt="Probiotic">
+                    <span>Probiotic - ₦13,990</span>
+                    <button onclick="addToCart('Probiotic', 13990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF33A1/FFFFFF?text=Fish+Oil" alt="Fish Oil">
+                    <span>Fish Oil - ₦11,490</span>
+                    <button onclick="addToCart('Fish Oil', 11490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/A133FF/FFFFFF?text=Zinc" alt="Zinc">
+                    <span>Zinc - ₦6,990</span>
+                    <button onclick="addToCart('Zinc', 6990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FFA1/FFFFFF?text=Iron+Supplement" alt="Iron Supplement">
+                    <span>Iron Supplement - ₦7,490</span>
+                    <button onclick="addToCart('Iron Supplement', 7490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FFFF33/FFFFFF?text=Biotin" alt="Biotin">
+                    <span>Biotin - ₦10,490</span>
+                    <button onclick="addToCart('Biotin', 10490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FFFF/FFFFFF?text=Collagen" alt="Collagen">
+                    <span>Collagen - ₦15,990</span>
+                    <button onclick="addToCart('Collagen', 15990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF33FF/FFFFFF?text=Melatonin" alt="Melatonin">
+                    <span>Melatonin - ₦5,490</span>
+                    <button onclick="addToCart('Melatonin', 5490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FF33/FFFFFF?text=Aloe+Vera+Gel" alt="Aloe Vera Gel">
+                    <span>Aloe Vera Gel - ₦4,990</span>
+                    <button onclick="addToCart('Aloe Vera Gel', 4990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF5733/FFFFFF?text=Sunscreen" alt="Sunscreen">
+                    <span>Sunscreen - ₦12,990</span>
+                    <button onclick="addToCart('Sunscreen', 12990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FF57/FFFFFF?text=Moisturizer" alt="Moisturizer">
+                    <span>Moisturizer - ₦8,990</span>
+                    <button onclick="addToCart('Moisturizer', 8990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/3357FF/FFFFFF?text=Shampoo" alt="Shampoo">
+                    <span>Shampoo - ₦6,490</span>
+                    <button onclick="addToCart('Shampoo', 6490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF33A1/FFFFFF?text=Conditioner" alt="Conditioner">
+                    <span>Conditioner - ₦6,490</span>
+                    <button onclick="addToCart('Conditioner', 6490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/A133FF/FFFFFF?text=Toothpaste" alt="Toothpaste">
+                    <span>Toothpaste - ₦3,490</span>
+                    <button onclick="addToCart('Toothpaste', 3490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FFA1/FFFFFF?text=Mouthwash" alt="Mouthwash">
+                    <span>Mouthwash - ₦4,990</span>
+                    <button onclick="addToCart('Mouthwash', 4990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FFFF33/FFFFFF?text=Deodorant" alt="Deodorant">
+                    <span>Deodorant - ₦5,990</span>
+                    <button onclick="addToCart('Deodorant', 5990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FFFF/FFFFFF?text=Soap" alt="Soap">
+                    <span>Soap - ₦2,490</span>
+                    <button onclick="addToCart('Soap', 2490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF33FF/FFFFFF?text=Shaving+Cream" alt="Shaving Cream">
+                    <span>Shaving Cream - ₦4,490</span>
+                    <button onclick="addToCart('Shaving Cream', 4490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FF33/FFFFFF?text=Razor" alt="Razor">
+                    <span>Razor - ₦3,990</span>
+                    <button onclick="addToCart('Razor', 3990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF5733/FFFFFF?text=Tissues" alt="Tissues">
+                    <span>Tissues - ₦1,990</span>
+                    <button onclick="addToCart('Tissues', 1990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FF57/FFFFFF?text=Cotton+Balls" alt="Cotton Balls">
+                    <span>Cotton Balls - ₦2,990</span>
+                    <button onclick="addToCart('Cotton Balls', 2990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/3357FF/FFFFFF?text=Q-Tips" alt="Q-Tips">
+                    <span>Q-Tips - ₦3,490</span>
+                    <button onclick="addToCart('Q-Tips', 3490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF33A1/FFFFFF?text=Adhesive+Tape" alt="Adhesive Tape">
+                    <span>Adhesive Tape - ₦4,990</span>
+                    <button onclick="addToCart('Adhesive Tape', 4990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/A133FF/FFFFFF?text=Gauze" alt="Gauze">
+                    <span>Gauze - ₦5,490</span>
+                    <button onclick="addToCart('Gauze', 5490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FFA1/FFFFFF?text=Alcohol+Wipes" alt="Alcohol Wipes">
+                    <span>Alcohol Wipes - ₦3,990</span>
+                    <button onclick="addToCart('Alcohol Wipes', 3990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FFFF33/FFFFFF?text=Gloves" alt="Gloves">
+                    <span>Gloves - ₦6,990</span>
+                    <button onclick="addToCart('Gloves', 6990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FFFF/FFFFFF?text=Scales" alt="Scales">
+                    <span>Scales - ₦14,990</span>
+                    <button onclick="addToCart('Scales', 14990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF33FF/FFFFFF?text=Blood+Pressure+Monitor" alt="Blood Pressure Monitor">
+                    <span>Blood Pressure Monitor - ₦29,990</span>
+                    <button onclick="addToCart('Blood Pressure Monitor', 29990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FF33/FFFFFF?text=Glucose+Meter" alt="Glucose Meter">
+                    <span>Glucose Meter - ₦19,990</span>
+                    <button onclick="addToCart('Glucose Meter', 19990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF5733/FFFFFF?text=Test+Strips" alt="Test Strips">
+                    <span>Test Strips - ₦15,490</span>
+                    <button onclick="addToCart('Test Strips', 15490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FF57/FFFFFF?text=Wheelchair" alt="Wheelchair">
+                    <span>Wheelchair - ₦199,990</span>
+                    <button onclick="addToCart('Wheelchair', 199990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/3357FF/FFFFFF?text=Walker" alt="Walker">
+                    <span>Walker - ₦49,990</span>
+                    <button onclick="addToCart('Walker', 49990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF33A1/FFFFFF?text=Cane" alt="Cane">
+                    <span>Cane - ₦19,990</span>
+                    <button onclick="addToCart('Cane', 19990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/A133FF/FFFFFF?text=Heating+Pad" alt="Heating Pad">
+                    <span>Heating Pad - ₦24,990</span>
+                    <button onclick="addToCart('Heating Pad', 24990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FFA1/FFFFFF?text=Ice+Pack" alt="Ice Pack">
+                    <span>Ice Pack - ₦9,990</span>
+                    <button onclick="addToCart('Ice Pack', 9990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FFFF33/FFFFFF?text=Massage+Oil" alt="Massage Oil">
+                    <span>Massage Oil - ₦12,490</span>
+                    <button onclick="addToCart('Massage Oil', 12490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FFFF/FFFFFF?text=Essential+Oils" alt="Essential Oils">
+                    <span>Essential Oils - ₦14,990</span>
+                    <button onclick="addToCart('Essential Oils', 14990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF33FF/FFFFFF?text=Herbal+Tea" alt="Herbal Tea">
+                    <span>Herbal Tea - ₦7,990</span>
+                    <button onclick="addToCart('Herbal Tea', 7990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FF33/FFFFFF?text=Protein+Bars" alt="Protein Bars">
+                    <span>Protein Bars - ₦9,490</span>
+                    <button onclick="addToCart('Protein Bars', 9490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF5733/FFFFFF?text=Energy+Drinks" alt="Energy Drinks">
+                    <span>Energy Drinks - ₦2,490</span>
+                    <button onclick="addToCart('Energy Drinks', 2490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FF57/FFFFFF?text=Vitamin+Water" alt="Vitamin Water">
+                    <span>Vitamin Water - ₦1,990</span>
+                    <button onclick="addToCart('Vitamin Water', 1990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/3357FF/FFFFFF?text=Electrolyte+Powder" alt="Electrolyte Powder">
+                    <span>Electrolyte Powder - ₦8,990</span>
+                    <button onclick="addToCart('Electrolyte Powder', 8990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF33A1/FFFFFF?text=Sleep+Aid" alt="Sleep Aid">
+                    <span>Sleep Aid - ₦11,990</span>
+                    <button onclick="addToCart('Sleep Aid', 11990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/A133FF/FFFFFF?text=Diet+Pills" alt="Diet Pills">
+                    <span>Diet Pills - ₦19,990</span>
+                    <button onclick="addToCart('Diet Pills', 19990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FFA1/FFFFFF?text=Weight+Loss+Shake" alt="Weight Loss Shake">
+                    <span>Weight Loss Shake - ₦14,490</span>
+                    <button onclick="addToCart('Weight Loss Shake', 14490)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FFFF33/FFFFFF?text=Cholesterol+Medicine" alt="Cholesterol Medicine">
+                    <span>Cholesterol Medicine - ₦24,990</span>
+                    <button onclick="addToCart('Cholesterol Medicine', 24990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FFFF/FFFFFF?text=Blood+Thinner" alt="Blood Thinner">
+                    <span>Blood Thinner - ₦29,990</span>
+                    <button onclick="addToCart('Blood Thinner', 29990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF33FF/FFFFFF?text=Diabetic+Supplies" alt="Diabetic Supplies">
+                    <span>Diabetic Supplies - ₦39,990</span>
+                    <button onclick="addToCart('Diabetic Supplies', 39990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/33FF33/FFFFFF?text=Allergy+Shots" alt="Allergy Shots">
+                    <span>Allergy Shots - ₦49,990</span>
+                    <button onclick="addToCart('Allergy Shots', 49990)">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/150x150/FF5733/FFFFFF?text=Vaccine" alt="Vaccine">
+                    <span>Vaccine - ₦59,990</span>
+                    <button onclick="addToCart('Vaccine', 59990)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: ₦<span id="total">0</span></p>
+            <button onclick="proceedToPayment()">Proceed to Payment</button>
+        </div>
+        <div id="payment-section" style="display: none;">
+            <h2>Payment</h2>
+            <form id="payment-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br>
+                <label>Payment Method:</label><br>
+                <input type="radio" id="card" name="payment-method" value="card" required>
+                <label for="card">Credit/Debit Card</label><br>
+                <input type="radio" id="transfer" name="payment-method" value="transfer" required>
+                <label for="transfer">Bank Transfer</label><br>
+                <div id="card-details" style="display: none;">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number"><br>
+                    <label for="expiry">Expiry Date:</label>
+                    <input type="text" id="expiry" placeholder="MM/YY"><br>
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv"><br>
+                </div>
+                <div id="transfer-details" style="display: none;">
+                    <p>Bank Transfer Details:</p>
+                    <p>Account Name: Asmee Na Madatai Pharmacy</p>
+                    <p>Account Number: 0165632192</p>
+                    <p>Bank: union bank</p>
+                    <p>Please transfer the total amount and include your order reference.</p>
+                </div>
+                <button type="submit">Complete Payment</button>
+            </form>
+        </div>
+        <div id="receipt" style="display: none;">
+            <h2>Receipt</h2>
+            <p>Thank you for your purchase!</p>
+            <p>Name: <span id="receipt-name"></span></p>
+            <p>Email: <span id="receipt-email"></span></p>
+            <p>Payment Method: <span id="receipt-method"></span></p>
+            <h3>Items Purchased:</h3>
+            <ul id="receipt-items"></ul>
+            <p>Total: ₦<span id="receipt-total"></span></p>
+            <p>Order Date: <span id="receipt-date"></span></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
